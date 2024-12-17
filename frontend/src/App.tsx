@@ -6,6 +6,7 @@ import Doctor from "./pages/Doctor";
 import Login from "./pages/Login";
 import MyAppoinment from "./pages/MyAppoinment";
 import MyProfile from "./pages/MyProfile";
+import Appoinment from "./pages/Appoinment";
 
 export default function App() {
   return (
@@ -15,10 +16,11 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/doctor" element={<Doctor />} />
+          <Route path="/doctor/:speciality" element={<Doctor />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/appoinment" element={<MyAppoinment />} />
+          <Route path="/my-appoinment" element={<MyAppoinment />} />
           <Route path="/profile" element={<MyProfile />} />
+          <Route path="/appoinment/:docId" element={<Appoinment />} />
         </Routes>
       </Router>
     </div>
