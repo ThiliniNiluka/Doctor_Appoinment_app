@@ -247,7 +247,7 @@ export default function TopDoctors() {
   ];
   return (
     <div className="flex flex-col items-center gap-4 my-16 text-gray-900 md:mx-10">
-      <h1 className="text-xl font-medium">Top Doctors to Book</h1>
+      <h1 className="text-3xl font-medium">Top Doctors to Book</h1>
       <p className="text-sm text-center sm:w-1/3">
         Simply browse through our extensive list of trusted doctors.
       </p>
@@ -270,7 +270,13 @@ export default function TopDoctors() {
           </div>
         ))}
       </div>
-      <button className="px-12 py-3 mt-10 text-gray-600 rounded-full bg-blue-50">
+      <button
+        onClick={() => {
+          navigate("/doctors");
+          scrollTo(0, 0);
+        }}
+        className="px-12 py-3 mt-10 text-gray-600 rounded-full bg-blue-50"
+      >
         more
       </button>
     </div>
