@@ -1,5 +1,11 @@
 import Header from "../components/Header";
+import SpecialityMenu from "../components/SpecialityMenu";
 
 export default function Home() {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <SpecialityMenu />
+    </div>
+  );
 }
