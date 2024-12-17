@@ -7,15 +7,18 @@ import Login from "./pages/Login";
 import MyAppoinment from "./pages/MyAppoinment";
 import MyProfile from "./pages/MyProfile";
 import Appoinment from "./pages/Appoinment";
+import NavBar from "./components/NavBar";
 
 export default function App() {
   return (
     <div className="mx-4 sm:mx-[10%]">
       <Router>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/doctors" element={<Doctor />} />
           <Route path="/doctor/:speciality" element={<Doctor />} />
           <Route path="/login" element={<Login />} />
           <Route path="/my-appoinment" element={<MyAppoinment />} />
