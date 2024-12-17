@@ -8,6 +8,7 @@ import MyAppoinment from "./pages/MyAppoinment";
 import MyProfile from "./pages/MyProfile";
 import Appoinment from "./pages/Appoinment";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="/profile" element={<MyProfile />} />
           <Route path="/appoinment/:docId" element={<Appoinment />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
